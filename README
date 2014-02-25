@@ -1,12 +1,31 @@
-$mkdir ~/Hello-World
-# Creates a directory for your project called "Hello-World" in your user directory
+# Русскоязычное руководство по использованию git http://githowto.com/
 
-$cd ~/Hello-World
-# Changes the current working directory to your newly created directory
+# Настройка git
+$git config --global user.name "Your Name"
+$git config --global user.email "your_email@whatever.com"
 
+# Что-то связанное с окончаниями строк
+$git config --global core.autocrlf input
+$git config --global core.safecrlf true
+
+# Создаст папку b2bAnodos
+$mkdir ~/b2bAnodos
+
+# Зайдем в папку
+$cd ~/b2bAnodos
+
+# Установим необходимые файлы git
+# инициализируем пустой репозиторий /Users/<user_name>/b2bAnodos/.git/
 $git init
-# Sets up the necessary Git files
-# Initialized empty Git repository in /Users/you/Hello-World/.git/
 
+# Создаем файл "README" в папке b2bAnodos
 $touch README
-# Creates a file called "README" in your Hello-World directory
+
+# Добавляем файл в репозиторий (подключаем контроль версий)
+$git add README
+
+# Фиксируем изменения
+$git commit -m "Added README"
+
+#Проверить статус репозитория -- внесенные изменения
+$git status
