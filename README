@@ -27,5 +27,9 @@ $git add README
 # Фиксируем изменения
 $git commit -m "Added README"
 
+# Применяем на github
+$git remote add origin https://github.com/AJbezpalov/b2bAnodos.git
+$git push origin master
+
 #Проверить статус репозитория -- внесенные изменения
 $git status
